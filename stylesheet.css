@@ -1,10 +1,13 @@
-*{
+* {
     padding: 0;
+    scroll-behavior: smooth;
     margin: 0;
     box-sizing: border-box;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+
+body {
     padding: 20px;
     justify-self: center;
     height: 100%;
@@ -12,72 +15,153 @@ body{
     background-color: blanchedalmond;
     /* text-align: center; */
 }
-img{
-    padding: 5px;
-  margin: 10px;
-  border-width: 20px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50px;
-  float: left;
-  display: flex;
-  /* justify-content: right; */
-  /* max-inline-size: 100%; */
+
+#aboutme,
+#services,
+#project,
+#hobbies{
+    width: 90%;
+    margin:0 auto;
+    height: fit-content;
+    text-align: center;
 }
-header{
+.top{
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-div{
+    text-align: center;
+    align-self: center;
+    justify-self: center; 
+}
+
+.name{
+    font-size: 25px;
+    color:maroon;
+   font-weight: bold;
+}
+img {
+    padding: 5px;
+    margin: 10px;
+    border-width: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    /* justify-content: right; */
+    /* max-inline-size: 100%; */
+}
+
+header {
     background-color: burlywood;
     border-radius: 5px;
-}
-nav{
-   display: flex;
-   justify-content: space-around;
-   margin-bottom: 3rem; 
-   padding: 8px;
-}
-nav a{
-    text-decoration: none;
-    text-align: center;
-    font-weight: 600;
-    color: black;
+    position: sticky;
+    width: 100%;
+    margin:0 auto;
+    top: 0;
+    padding: 10px 0;
+    z-index: 1;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-a:hover{
-    background-color: beige;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 90%;
+    flex-wrap: wrap;
 }
-main{
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    width: fit-content;
+    padding: 0 10px;
+    align-self: center;
+    transition: color .6s;
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+main {
     /* gap: 10px; */
     padding: 20px;
 
 }
 
-h2 ,h3{
-    /* text-align: center; */
-    font-size: medium;
-    color: black;  
+h2,
+h3 {
+    font-size: 30px;
+    color: rgb(43, 42, 42);
     text-align: center;
 }
-p{
-    padding: 0.5rem;
-    font-size: large;
-   
-    
-    
+.first{
+    margin-bottom: 30px;
 }
 
-button{
- text-align: center;
-  padding: 5px;
-  font-size: larger;
- border: none;
-  cursor: pointer;
-  float: right;
-  width: 30%; 
- background-color: burlywood;
- font-weight: 600;
- 
+p {
+    padding: 0.5rem;
+    font-size: large;
+    margin-bottom: 30px;
+
 }
-button a{
+
+
+footer{
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgb(121, 86, 35);
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px 0 0;
+}
+
+ 
+.buton a{
     text-decoration: none;
-    color: black;
-   
+    color: rgb(248, 248, 248);
+    padding: 20px 15px;
+    background-color: burlywood; 
+    border-radius: 10px;  
+    transition: font-size .5s, font-weight .5s; 
+}
+.buton a:hover{
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width:380px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    nav a{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .se{
+        margin-top: 20px;
+    }
+    
 }
