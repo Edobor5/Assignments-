@@ -19,13 +19,14 @@ body {
 #aboutme,
 #services,
 #project,
-#hobbies{
+#hobbies {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     height: fit-content;
     text-align: center;
 }
-.top{
+
+.top {
     display: flex;
     width: 90%;
     margin: 10px auto;
@@ -34,17 +35,18 @@ body {
     flex-wrap: wrap;
 }
 
-.first-div{
+.first-div {
     text-align: center;
     align-self: center;
-    justify-self: center; 
+    justify-self: center;
 }
 
-.name{
+.name {
     font-size: 25px;
-    color:maroon;
-   font-weight: bold;
+    color: maroon;
+    font-weight: bold;
 }
+
 img {
     padding: 5px;
     margin: 10px;
@@ -61,11 +63,11 @@ header {
     border-radius: 5px;
     position: sticky;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     top: 0;
     padding: 10px 0;
     z-index: 1;
-    height:fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +92,8 @@ nav a {
     align-self: center;
     transition: color .6s;
 }
-nav a:hover{
+
+nav a:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -107,7 +110,8 @@ h3 {
     color: rgb(43, 42, 42);
     text-align: center;
 }
-.first{
+
+.first {
     margin-bottom: 30px;
 }
 
@@ -119,7 +123,7 @@ p {
 }
 
 
-footer{
+footer {
     margin-top: 40px;
     width: 100%;
     background-color: rgb(121, 86, 35);
@@ -130,16 +134,17 @@ footer{
     border-radius: 25px 25px 0 0;
 }
 
- 
-.buton a{
+
+.buton a {
     text-decoration: none;
     color: rgb(248, 248, 248);
     padding: 20px 15px;
-    background-color: burlywood; 
-    border-radius: 10px;  
-    transition: font-size .5s, font-weight .5s; 
+    background-color: burlywood;
+    border-radius: 10px;
+    transition: font-size .5s, font-weight .5s;
 }
-.buton a:hover{
+
+.buton a:hover {
     font-size: large;
     font-weight: bolder;
 }
@@ -154,14 +159,26 @@ footer{
         width: fit-content;
     }
 
-    nav a{
+    nav a {
         margin-top: 10px;
     }
 }
 
 @media (max-width:400px) {
-    .se{
+    .se {
         margin-top: 20px;
     }
-    
+
+    #aboutme,
+    #services,
+    #project,
+    #hobbies {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width:390px) {
+    .see{
+        margin-top: 20px;
+    }
 }
